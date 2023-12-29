@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="881" height="221" viewBox="0 0 881 221">
+  <g id="Group_13" data-name="Group 13" transform="translate(3653 -6564)">
+    <path id="Path_4" data-name="Path 4" d="M-2772.5,6591.5" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_5" data-name="Path 5" d="M-3522.5,6591.5" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Rectangle_57" data-name="Rectangle 57" transform="translate(-3653 6564)" fill="#ffc900" stroke="#000" stroke-width="2">
+      <rect width="881" height="221" rx="110.5" stroke="none"/>
+      <rect x="1" y="1" width="879" height="219" rx="109.5" fill="none"/>
+    </g>
+    <path id="Path_6" data-name="Path 6" d="M-3537.244,6606.016" transform="matrix(-0.819, 0.574, -0.574, -0.819, -2690.163, 14186.47)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Path_7" data-name="Path 7" d="M750.5,0a90.5,90.5,0,0,1,0,181" transform="translate(-3633 6584)" fill="#ffc900" stroke="#000" stroke-width="2"/>
+    <path id="Path_8" data-name="Path 8" d="M750.5,0a90.5,90.5,0,0,1,0,181" transform="translate(-2791.927 6765) rotate(180)" fill="#ffc900" stroke="#000" stroke-width="2"/>
+    <line id="Line_770" data-name="Line 770" x2="78.927" y2="0.5" transform="translate(-3542.427 6584)" fill="none" stroke="#000" stroke-width="2"/>
+    <line id="Line_771" data-name="Line 771" x2="78.927" y2="0.5" transform="translate(-3542.427 6765)" fill="none" stroke="#000" stroke-width="2"/>
+    <path id="Path_9" data-name="Path 9" d="M10,0A10,10,0,0,1,20,10" transform="translate(-3453 6584) rotate(180)" fill="none" stroke="#000" stroke-width="2"/>
+    <path id="Path_10" data-name="Path 10" d="M10,0A10,10,0,0,1,20,10" transform="translate(-3473 6605) rotate(-90)" fill="none" stroke="#000" stroke-width="2"/>
+    <path id="Path_11" data-name="Path 11" d="M10,0A10,10,0,0,1,20,10" transform="translate(-2952 6744) rotate(90)" fill="none" stroke="#000" stroke-width="2"/>
+    <line id="Line_772" data-name="Line 772" x2="78.927" y2="0.5" transform="translate(-2961.427 6764.5)" fill="none" stroke="#000" stroke-width="2"/>
+    <path id="Path_12" data-name="Path 12" d="M10,0A10,10,0,0,1,20,10" transform="translate(-2972 6764.75)" fill="none" stroke="#000" stroke-width="2"/>
+    <text id="Zuverlässigkeit" transform="translate(-3433 6591)" stroke="rgba(0,0,0,0)" stroke-width="3" font-size="20" font-family="Work Sans"><tspan x="0" y="0">Zuverlässigkeit</tspan></text>
+    <text id="Qualität" transform="translate(-2981 6591)" stroke="rgba(0,0,0,0)" stroke-width="3" font-size="20" font-family="Work Sans"><tspan x="0" y="0">Qualität</tspan></text>
+    <text id="Effizienz" transform="translate(-3076 6771)" stroke="rgba(0,0,0,0)" stroke-width="3" font-size="20" font-family="Work Sans"><tspan x="0" y="0">Effizienz</tspan></text>
+    <text id="Sauberkeit" transform="translate(-3443 6772)" stroke="rgba(0,0,0,0)" stroke-width="3" font-size="20" font-family="Work Sans"><tspan x="0" y="0">Sauberkeit</tspan></text>
+    <g id="Group_12" data-name="Group 12" transform="translate(-6 -0.5)">
+      <line id="Line_773" data-name="Line 773" x2="78.927" y2="0.5" transform="translate(-3084.427 6584)" fill="none" stroke="#000" stroke-width="2"/>
+      <path id="Path_13" data-name="Path 13" d="M10,0A10,10,0,0,1,20,10" transform="translate(-2995 6584) rotate(180)" fill="none" stroke="#000" stroke-width="2"/>
+      <path id="Path_14" data-name="Path 14" d="M10,0A10,10,0,0,1,20,10" transform="translate(-3015 6605) rotate(-90)" fill="none" stroke="#000" stroke-width="2"/>
+    </g>
+    <line id="Line_774" data-name="Line 774" x2="201.5" transform="translate(-3307.5 6765.5)" fill="none" stroke="#000" stroke-width="2"/>
+    <path id="Path_15" data-name="Path 15" d="M10,0A10,10,0,0,1,20,10" transform="translate(-3298 6745) rotate(90)" fill="none" stroke="#000" stroke-width="2"/>
+    <path id="Path_16" data-name="Path 16" d="M10,0A10,10,0,0,1,20,10" transform="translate(-3318 6766)" fill="none" stroke="#000" stroke-width="2"/>
+  </g>
+</svg>

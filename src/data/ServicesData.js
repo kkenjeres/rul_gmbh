@@ -2,46 +2,63 @@ export const services = [
       {
           id:1,
           img: '/images/home.jpg',
-          title: 'Hausmeisterservice'
+          title: 'Hausmeisterservice',
+          slug:"hausmeisterservice"
+
       },
       {
           id:2,
           img: '/images/office.jpg',
-          title: 'Büroreinigung'
+          title: 'Büroreinigung',
+          slug:"büroreinigung"
+
       },
       {
           id:3,
           img: '/images/winter.jpg',
-          title: 'Glasreinigung'
+          title: 'Glasreinigung',
+          slug:"glasreinigung"
       },
       {
           id:4,
           img: '/images/winter.jpg',
-          title: 'Unterhaltsreinigung'
+          title: 'Unterhaltsreinigung',
+          slug:"unterhaltsreinigung"
+
       },
       {
           id:5,
           img: '/images/winter.jpg',
-          title: 'Kehrwoche'
+          title: 'Kehrwoche',
+          slug:"kehrwoche"
+
       },
       {
           id:6,
           img: '/images/winter.jpg',
-          title: 'Gartenplege'
+          title: 'Gartenplege',
+          slug:"gartenplege"
+
       },
       {
           id:7,
           img: '/images/winter.jpg',
-          title: 'Winterdienst'
+          title: 'Winterdienst',
+          slug:"winterdienst"
+
       },
       {
           id:8,
           img: '/images/winter.jpg',
-          title: 'Hausmeisterservice'
+          title: 'Hausmeisterservice',
+          slug:"hausmeisterservice"
+
       },
       {
           id:9,
           img: '/images/winter.jpg',
-          title: 'Hausmeisterservice'
+          title: 'Hausmeisterservice',
+          slug:"hausmeisterservice"
+
       }
     ]
