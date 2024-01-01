@@ -1,26 +1,27 @@
 import React from "react";
 import Image from "next/image.js";
+import { GoArrowUpRight } from "react-icons/go";
 
-const ServiceCard = ({ service }) => {
-  // Используйте service вместо services
+const ServiceCard = ({ service, className }) => {
   return (
-    <>
-      <div className=" flex h-full w-full cursor-pointer flex-col items-center justify-center rounded-b-2xl text-black shadow-lg brightness-[.3] transition duration-500 ease-in-out hover:scale-105 hover:text-black hover:brightness-[1]">
-        <div className=" w-full">
-          <Image
-            src={service.img}
-            alt={service.title}
-            width={400}
-            height={400}
-            className="h-[200px] w-full rounded-t-2xl  	 transition duration-500 ease-in-out"
-            objectFit="cover"
-          />
-        </div>
-        <div className="h-[100px] w-full rounded-b-2xl bg-[#F5F5F7] p-4 ">
-          <h2 className=" font-spaceGrotesk  text-[20px] ">{service.title}</h2>
-        </div>
+    <div
+      className={`${className} group relative h-[700px] cursor-pointer overflow-hidden text-black shadow-lg transition duration-500 ease-in-out `}
+    >
+      <Image
+        src={service.img}
+        alt={service.title}
+        layout="fill"
+        objectFit="cover"
+        className="transform-gpu rounded-br-[60px] transition duration-500 ease-in-out hover:scale-[1.03]"
+      />
+      <div className="absolute bottom-20 left-0 flex h-[100px] w-[70%] items-center overflow-hidden rounded-br-[40px] bg-[#02AFEF] px-10">
+        <div className="absolute left-0 h-full w-0 bg-[#215568] transition-all duration-300 ease-in-out group-hover:w-full "></div>
+        <h2 className="flex justify-between w-full items-center font-spaceGrotesk relative z-2 text-[24px] font-normal transition duration-300 group-hover:text-white">
+          {service.title}<GoArrowUpRight className="group-hover:fill-white relative z-2 text-[30px]" />
+        </h2>
+        
       </div>
-    </>
+    </div>
   );
 };
 
