@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { IoMdMail } from "react-icons/io";
 
 export const Form = () => {
   const [formData, setFormData] = useState({
@@ -28,48 +29,63 @@ export const Form = () => {
     });
   };
   return (
-    <div className="mx-auto flex w-[80%] h-[500px] flex-col rounded-xl  bg-[#F5F5F7]">
-      <form onSubmit={submitForm} className="flex flex-col w-[80%] h-[80%] m-auto">
-        <label htmlFor="name">Name</label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-          className="border border-black"
-        />
+    <div className=" m-auto flex justify-center ">
+      <div className="flex w-[80%] flex-col justify-between">
+        <form className="font-spaceGrotesk flex flex-col gap-2 text-[20px]">
+          <label htmlFor="name">Name or Company</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            className="border border-black p-2 text-[16px]"
+          />
 
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className="border border-black p-2 text-[16px]"
+          />
 
-        <label htmlFor="companyName">Company</label>
-        <input
-          type="text"
-          name="companyName"
-          id="companyName"
-          value={formData.companyName}
-          onChange={handleChange}
-        />
+          <label htmlFor="companyName">Company (but need services)</label>
+          <input
+            type="text"
+            name="companyName"
+            id="companyName"
+            value={formData.companyName}
+            onChange={handleChange}
+            className="border border-black p-2 text-[16px]"
+          />
 
-        <label htmlFor="message">Message</label>
-        <textarea
-          name="message"
-          id="message"
-          value={formData.message}
-          onChange={handleChange}
-        ></textarea>
-
-        <button type="submit">Submit</button>
-      </form>
+          <label htmlFor="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            value={formData.message}
+            onChange={handleChange}
+            rows="5"
+            cols="50"
+            className="resize-none border border-black bg-transparent p-2 hover:resize"
+          ></textarea>
+        </form>
+        <div className="flex justify-center">
+          <button
+            onClick={submitForm}
+            type="submit"
+            className="mt-10 flex items-center  justify-center  rounded-xl border border-black bg-white px-6 py-4 text-black transition duration-300 hover:bg-[#f3f3f3]"
+          >
+            Submit
+            <IoMdMail className="ml-2 text-[20px]"/>
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

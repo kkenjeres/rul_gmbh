@@ -1,6 +1,6 @@
 import Contact from "@/components/Contact";
 import Principles from "@/components/Principles";
-import { ServicesList } from "@/app/Services/ServiceList.jsx";
+import { ServicesList } from "@/components/ServiceList.jsx";
 import { services } from "../data/ServicesData.js";
 export default function Home() {
   return (
