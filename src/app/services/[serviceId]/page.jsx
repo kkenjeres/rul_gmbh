@@ -21,15 +21,16 @@ export default function ServiceDetails() {
         <div className="relative h-[450px] w-full">
           <Image
             src={service.img}
+            alt={service.title}
             layout="fill"
             objectFit="cover"
-            className=""
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
 
         <p className="mt-10 w-[90%]">{service.description}</p>
       </div>
-        <Contact />
+      <Contact />
     </section>
   );
 }
