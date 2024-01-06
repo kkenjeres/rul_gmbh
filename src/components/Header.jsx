@@ -56,8 +56,10 @@ const Header = () => {
             <Link href="/">
               <li onClick={scrollToTop}>Home</li>
             </Link>
-            <Link href="/">
-              <li>Über uns</li>
+            <Link href="#aboutSection">
+              <li onClick={(e) => handleLinkClick(e, "aboutSection")}>
+                Über uns
+              </li>
             </Link>
             <Link href="#servicesSection">
               <li onClick={(e) => handleLinkClick(e, "servicesSection")}>
