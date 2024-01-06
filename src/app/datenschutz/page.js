@@ -2,7 +2,7 @@ const Datenschutz = () => {
   return (
     <article className="m-auto w-[80%] py-20">
       <h1 className="text-[180px] underline">Datenschutz</h1>
-      <p>
+      <p className="font-spaceGrotesk">
         Datenschutzerklärung Diese Datenschutzerklärung klärt Sie über die Art,
         den Umfang und Zweck der Verarbeitung von personenbezogenen Daten
         (nachfolgend kurz „Daten“) im Rahmen der Erbringung unserer Leistungen

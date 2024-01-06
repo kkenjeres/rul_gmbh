@@ -19,10 +19,8 @@ export default function Map() {
   });
 
   return (
-      
-
       <MapContainer
-        className="z-0 m-auto rounded-lg shadow-xl"
+        className="z-0 m-auto rounded-lg shadow-xl border border-black"
         center={center}
         zoom={20}
         style={{ height: "400px", width: "80%" }}
