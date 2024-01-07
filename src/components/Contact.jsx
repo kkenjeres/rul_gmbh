@@ -2,7 +2,7 @@ import React from "react";
 import { Form } from "./Form";
 const Contact = () => {
   return (
-    <section className="bg-[#F5F5F7] py-40" id="contactSection">
+    <section className="py-40 h-screen" id="contactSection">
       <div className="m-auto flex h-[600px] w-[85%] rounded-xl bg-[#F2F1ED] shadow-xl">
         <div className="flex h-full  w-full flex-col items-center justify-center rounded-l-xl bg-black text-white ">
           <h2 className=" mb-20 text-[50px]">

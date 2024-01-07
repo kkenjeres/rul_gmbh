@@ -19,21 +19,21 @@ export default function Map() {
   });
 
   return (
-      <MapContainer
-        className="z-0 m-auto rounded-lg shadow-xl border border-black"
-        center={center}
-        zoom={20}
-        style={{ height: "400px", width: "80%" }}
-        attributionControl={false}
-      >
-        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-        {geoData.lat && geoData.lng && (
-          <Marker position={[geoData.lat, geoData.lng]} icon={customIcon}>
-            <Popup className="rounded-lg">
-              <p className="font-spaceGrotesk text-lg">Königstraße 62 RUL</p>
-            </Popup>
-          </Marker>
-        )}
-      </MapContainer>
+    <MapContainer
+      className="z-0 m-auto rounded-bl-[60px] shadow-xl"
+      center={center}
+      zoom={20}
+      style={{ height: "100%", width: "100%" }}
+      attributionControl={false}
+    >
+      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+      {geoData.lat && geoData.lng && (
+        <Marker position={[geoData.lat, geoData.lng]} icon={customIcon}>
+          <Popup className="rounded-lg">
+            <p className="font-spaceGrotesk text-lg">Königstraße 62 RUL</p>
+          </Popup>
+        </Marker>
+      )}
+    </MapContainer>
   );
 }
