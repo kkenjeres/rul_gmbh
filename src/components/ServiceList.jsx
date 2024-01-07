@@ -3,8 +3,10 @@ import ServiceCard from "./ServiceCard.jsx";
 export const ServicesList = ({ services }) => {
   return (
     <section className="bg-[#F5F5F7] py-40" id="servicesSection">
-      <h2 className="py-10 pl-20 text-[180px] underline">Services</h2>
-      <div className="m-auto grid h-full w-[98%] grid-cols-3 gap-4">
+      <h2 className="  text-center text-[30vw] underline">
+        Services
+      </h2>
+      <div className="pt-40 m-auto grid h-full w-[98%] grid-cols-3 gap-4">
         {services.map((service, i) => (
           <Link href={`/services/${service.slug}`} key={service.id}>
             <ServiceCard

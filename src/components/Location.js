@@ -27,47 +27,47 @@ const Location = () => {
   };
   console.log(showPopup);
   return (
-    <section className="bg-gray-100 ">
-      <h2 className="my-40  py-10 text-center text-[200px] underline">
-        Location
-      </h2>
+    <section className=" py-40 text-white">
+      <h2 className="  text-center text-[30vw] underline">Location</h2>
       <PopupGoogleMaps
         showPopup={showPopup}
         handlePopupClose={handlePopupClose}
       />
-      <div className="m-auto w-[80%]">
-        <p className="my-20 rounded-xl bg-[#222222] p-10 text-center font-spaceGrotesk text-[30px] text-white">
-          <span className="text-[50px]">Immer für Sie da!</span>
-          <br />
-          Sie sind auf der Suche nach einem professionellen und zuverlässigen
-          Reinigungsteam? Kontaktieren Sie uns, wir freuen uns auf Ihre Anfrage.
-        </p>
-        <div className="m-auto my-10 flex h-[150px] w-[60%] gap-4">
+      <p className="m-auto my-20 w-[60%] rounded-xl  p-10 text-center font-spaceGrotesk text-[30px] text-white">
+        <span className="text-[100px] ">Immer für Sie da!</span>
+        <br />
+        Sie sind auf der Suche nach einem professionellen und zuverlässigen
+        Reinigungsteam? Kontaktieren Sie uns, wir freuen uns auf Ihre Anfrage.
+      </p>
+      <div className="m-auto flex  w-[80%] gap-4  py-40">
+        <div className="m-auto flex   w-[40%] flex-col gap-2 rounded-br-[60px] rounded-tl-[60px]  border p-4">
           <div
             onClick={handleButtonClick}
-            className="flex h-full w-full cursor-pointer items-center justify-center  rounded-lg border border-[#222222] p-10 text-black transition duration-300  hover:bg-[#222222] hover:text-white"
+            className="flex h-full w-full cursor-pointer flex-col items-center justify-center   rounded-tl-[60px] border border-white p-4 text-[24px] text-white transition  duration-300 hover:bg-white hover:text-[#222222]"
           >
-            <MdLocationOn />
+            <MdLocationOn className="mb-10 text-[40px]" />
             Königstraße 62, <br /> 70173 Stuttgart
           </div>
 
           <a
             href="tel:+491727239933"
-            className="flex  h-full w-full cursor-pointer items-center justify-center rounded-lg border border-[#222222]  p-10 text-center text-[20px] text-black transition duration-300  hover:bg-[#222222] hover:text-white"
+            className="flex h-full w-full cursor-pointer flex-col items-center justify-center   border border-white p-4 text-[24px] text-white transition  duration-300 hover:bg-white hover:text-[#222222]"
           >
-            <MdPhoneInTalk />
+            <MdPhoneInTalk className="mb-10 text-[40px]" />
             +49(0)172-7239933
           </a>
 
-          <div className=" flex h-full w-full cursor-pointer justify-center  rounded-lg border border-[#222222] p-10 text-black transition duration-300  hover:bg-[#222222] hover:text-white">
-            <p className=" flex flex-col  items-center text-[20px]">
+          <div className="flex h-full w-full cursor-pointer items-center justify-center  rounded-br-[60px] border border-white p-4 text-[24px] text-white transition  duration-300 hover:bg-white hover:text-[#222222]">
+            <p className=" flex flex-col  items-center  text-[24px]">
               Contact Form
-              <MdOutlineArrowDownward className="text-[30px] hover:text-white " />
+              <MdOutlineArrowDownward className="mt-10 text-[40px]" />
             </p>
           </div>
         </div>
+        <div className=" w-full rounded-bl-[60px]  border border-white p-4 ">
+          <MapWithNoSSR />
+        </div>
       </div>
-      <MapWithNoSSR />
     </section>
   );
 };
