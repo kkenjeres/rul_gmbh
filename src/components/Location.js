@@ -1,11 +1,7 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import PopupGoogleMaps from "../components/PopupGoogleMaps";
-import {
-  MdLocationOn,
-  MdPhoneInTalk,
-  MdOutlineArrowDownward,
-} from "react-icons/md";
+import { MdLocationOn, MdPhoneInTalk, MdMail } from "react-icons/md";
 
 const MapWithNoSSR = dynamic(() => import("./Map"), { ssr: false });
 
@@ -45,10 +41,12 @@ const Location = () => {
             +49(0)172-7239933
           </a>
           <div className="flex h-full w-full cursor-pointer items-center justify-center rounded-br-[60px] border border-white p-4 text-[24px] text-white transition duration-300 hover:bg-white hover:text-[#222222]">
-            <p className="flex flex-col items-center text-[24px]">
-              Contact Form
-              <MdOutlineArrowDownward className="mt-10 text-[40px]" />
-            </p>
+            <a
+              href="mailto:info@rulgmbh.de"
+            >
+              <MdMail className="mb-10 text-[40px]" />
+              info@rulgmbh.de
+            </a>
           </div>
         </div>
         <div className="w-full rounded-bl-[60px] border border-white p-4">

@@ -9,10 +9,16 @@ import { ServicesList } from "@/components/ServiceList.jsx";
 import { services } from "../data/ServicesData.js";
 import Hero from "@/components/Hero.jsx";
 import About from "@/components/About.jsx";
-
+import MaskText from "./lib/framer-motion/MaskText.jsx";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
+  const specialPhrase = "R.U.L – Zuverlässig und professionell";
+
+  const phrases = [
+    "Mit über 24 Jahren Erfahrung bietet unser Unternehmen in Stuttgart und Umgebung hochwertige Dienstleistungen in den Bereichen Gebäudereinigung und Hausmeisterservice. Unser Ansatz basiert auf individueller Kundenbetreuung und maßgeschneiderten Reinigungskonzepten, abgestimmt auf Ihre spezifischen Anforderungen.",
+    "Vertrauen Sie auf unsere Professionalität, um Ihre Immobilien effizient und mit Sorgfalt zu pflegen.",
+  ];
   useEffect(() => {
     ScrollTrigger.create({
       trigger: ".servicesSection",
@@ -46,7 +52,7 @@ export default function Home() {
     <div className="homeContainer bg-[#F5F5F7]">
       <Hero />
       <div className="heroSection">
-        <About />
+        <MaskText phrases={[specialPhrase, ...phrases]} />
       </div>
       <ServicesList services={services} />
       <div className="servicesSection">
