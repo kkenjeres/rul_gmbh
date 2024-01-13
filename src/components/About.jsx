@@ -2,12 +2,11 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="aboutSection" className="py-40 h-">
+    <section id="aboutSection" className="py-10">
       <div className="m-auto w-[80%]">
         <p className="font-spaceGrotesk text-[50px] text-[#9b9b9b]">
-          <span className=" font-spaceGrotesk text-[70px] font-bold text-[#222222] mr-6">
-              R.U.L
-            – Zuverlässig und professionell
+          <span className=" mr-6 font-spaceGrotesk text-[70px] font-bold text-[#222222]">
+            R.U.L – Zuverlässig und professionell
           </span>
           Mit über 24 Jahren Erfahrung bietet unser Unternehmen in Stuttgart und
           Umgebung hochwertige Dienstleistungen in den Bereichen
