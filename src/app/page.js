@@ -51,7 +51,7 @@ export default function Home() {
   return (
     <div className="homeContainer bg-[#F5F5F7]">
       <Hero />
-      <div className="heroSection">
+      <div className="heroSection py-20">
         <MaskText phrases={[specialPhrase, ...phrases]} />
       </div>
       <ServicesList services={services} />

@@ -22,7 +22,7 @@ const Hero = () => {
             alt="Hel"
             objectFit="contain"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="h-full  rounded-xl   p-10"
+            className="h-full  rounded-xl   "
           ></Image>
         </div>
       </div>
