@@ -3,27 +3,18 @@ import Image from "next/image";
 import HeroImage from "../../public/images/hero.png";
 const Hero = () => {
   return (
-    <section className="h-screen w-full bg-white py-40" id="heroSection">
-      <div className="m-auto h-full w-[80%] gap-2 md:flex">
-        <div className="flex h-full justify-center rounded-xl  bg-[#222222] text-white md:w-[40%]">
-          <div className="m-auto flex h-[80%] w-[80%] flex-col justify-between ">
-            <h1 className="text-center text-[200px]">R.U.L.</h1>
-            <p className="font-spaceGrotesk text-[30px]">
-              Ihr Partner für Reinigung & Gebäudemanagement aus{" "}
-              <span className="text-bold text-[40px] underline">
-                Stuttgartt
-              </span>
-            </p>
-          </div>
-        </div>
-        <div className="h-full  rounded-xl  bg-[#222222] p-4 md:w-[60%]">
-          <Image
-            src={HeroImage}
-            alt="Hel"
-            objectFit="contain"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="h-full  rounded-xl   "
-          ></Image>
+    <section
+      className="hero-bg h-screen w-full bg-cover bg-center bg-no-repeat"
+      id="heroSection"
+    >
+      {/* Содержимое главного блока */}
+      <div className="mx-auto flex h-full items-center justify-center md:w-[30%]">
+        <div className="flex h-[80%] w-[90%] flex-col justify-between md:w-full">
+          <h1 className="text-center text-[180px] md:text-[200px]">R.U.L.</h1>
+          <p className="w-full rounded-lg bg-white/30 p-4 text-center font-spaceGrotesk text-[24px] shadow-md backdrop-blur-md md:text-[30px]">
+            Ihr Partner für Reinigung & Gebäudemanagement aus{" "}
+            <span className="text-[40px] font-bold underline">Stuttgart</span>
+          </p>
         </div>
       </div>
     </section>

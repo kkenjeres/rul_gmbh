@@ -12,3 +12,9 @@
 input {
   background-color: transparent;
 }
+
+@layer utilities {
+  .hero-bg {
+    background-image: url('/images/hero.png');
+  }
+}

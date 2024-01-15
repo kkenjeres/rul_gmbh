@@ -15,15 +15,15 @@ export default function Map() {
   const customIcon = new L.Icon({
     iconUrl: "/images/pin.svg",
     iconSize: [50, 50],
-    iconAnchor: [25, 50], // Обновите это для корректного отображения икон
+    iconAnchor: [50, 50],
   });
 
   return (
     <MapContainer
-      className="z-0 m-auto rounded-bl-[60px] shadow-xl"
+      className="z-10 h-full rounded-br-[60px] shadow-xl"
       center={center}
       zoom={20}
-      style={{ height: "100%", width: "100%" }}
+      style={{ height: "500px", width: "100%" }}
       attributionControl={false}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />

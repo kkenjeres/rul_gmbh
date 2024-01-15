@@ -29,9 +29,9 @@ export const Form = () => {
     });
   };
   return (
-    <div className=" m-auto flex justify-center ">
-      <div className="flex w-[80%] flex-col justify-between">
-        <form className="font-spaceGrotesk flex flex-col gap-2 text-[20px]">
+    <div className="m-auto flex justify-center py-10  md:py-0">
+      <div className="flex w-[80%] flex-col justify-between ">
+        <form className="flex flex-col gap-2 font-spaceGrotesk text-[20px]">
           <label htmlFor="name">Name or Company</label>
           <input
             type="text"
@@ -82,7 +82,7 @@ export const Form = () => {
             className="mt-10 flex items-center  justify-center  rounded-xl border border-black bg-white px-6 py-4 text-black transition duration-300 hover:bg-[#f3f3f3]"
           >
             Submit
-            <IoMdMail className="ml-2 text-[20px]"/>
+            <IoMdMail className="ml-2 text-[20px]" />
           </button>
         </div>
       </div>
