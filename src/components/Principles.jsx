@@ -5,7 +5,7 @@ const Principles = () => {
   return (
     <section className="my-20">
       <div className="m-auto w-[80%] text-center">
-        <h2 className="mb-10 text-[40px] font-spaceGrotesk">
+        <h2 className="mb-10 text-[40px] ">
           Wissen Sie, wie beeindruckend eine makellose Reinigung sein kann?
           <br />
           Dieses Erlebnis ist unser tägliches Bestreben.

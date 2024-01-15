@@ -30,7 +30,7 @@ export default function Map() {
       {geoData.lat && geoData.lng && (
         <Marker position={[geoData.lat, geoData.lng]} icon={customIcon}>
           <Popup className="rounded-lg">
-            <p className="font-spaceGrotesk text-lg">Königstraße 62 RUL</p>
+            <p className=" text-lg">Königstraße 62 RUL</p>
           </Popup>
         </Marker>
       )}

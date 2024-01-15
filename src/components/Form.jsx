@@ -29,9 +29,9 @@ export const Form = () => {
     });
   };
   return (
-    <div className="m-auto flex justify-center py-10  md:py-0">
+    <div className="m-auto flex justify-center py-10  md:py-0 ">
       <div className="flex w-[80%] flex-col justify-between ">
-        <form className="flex flex-col gap-2 font-spaceGrotesk text-[20px]">
+        <form className="flex flex-col gap-2  text-[20px]">
           <label htmlFor="name">Name or Company</label>
           <input
             type="text"
