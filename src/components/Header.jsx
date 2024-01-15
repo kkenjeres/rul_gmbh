@@ -37,22 +37,22 @@ const Header = () => {
   }, [lastScrollTop]);
   return (
     <header
-      className={`fixed top-0 z-10 w-full border-4 border-b-[#02AFEF] bg-white py-4 shadow transition-all duration-300 ${
-        isScrolled ? "h-24" : "h-24"
+      className={` top-0 z-10 w-full bg-white px-4 py-4 shadow transition-all duration-300 md:px-0 ${
+        isScrolled ? "h-32" : "h-32"
       } ${!isVisible && "translate-y-[-100%]"}`}
     >
-      <div className="m-auto flex h-full w-[90%] items-center justify-between">
+      <div className="m-auto flex h-full items-center justify-between md:w-[90%]">
         <Link href="/">
           <Image
             src={logo}
             alt="Logo"
-            width={isScrolled ? 50 : 50}
-            height={isScrolled ? 50 : 50}
+            width={isScrolled ? 70 : 70}
+            height={isScrolled ? 70 : 70}
             className="transition-all duration-300"
           />
         </Link>
         <nav>
-          <ul className="flex gap-4 text-[20px]">
+          <ul className="flex gap-4 text-[16px] md:text-[20px]">
             <Link href="/">
               <li onClick={scrollToTop}>Home</li>
             </Link>

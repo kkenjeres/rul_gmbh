@@ -8,8 +8,8 @@ import Location from "@/components/Location";
 import { ServicesList } from "@/components/ServiceList.jsx";
 import { services } from "../data/ServicesData.js";
 import Hero from "@/components/Hero.jsx";
-import About from "@/components/About.jsx";
 import MaskText from "./lib/framer-motion/MaskText.jsx";
+import "./globals.css";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
       start: "top top",
       endTrigger: ".locationSection", // Указываем конец триггера на начало компонента Location
       end: "top center", // Конец триггера, когда верх Location достигает центра
-      onEnter: () => gsap.to(".homeContainer", { backgroundColor: "#222222" }),
+      onEnter: () => gsap.to(".homeContainer", { backgroundColor: "#01AEEF" }),
       onLeaveBack: () =>
         gsap.to(".homeContainer", { backgroundColor: "#F5F5F7" }),
     });
@@ -36,7 +36,7 @@ export default function Home() {
       end: "top top",
       onEnter: () => gsap.to(".homeContainer", { backgroundColor: "#F5F5F7" }),
       onLeaveBack: () =>
-        gsap.to(".homeContainer", { backgroundColor: "#222222" }),
+        gsap.to(".homeContainer", { backgroundColor: "#01AEEF" }),
     });
     ScrollTrigger.create({
       trigger: ".heroSection",

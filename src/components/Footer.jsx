@@ -6,17 +6,19 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="h-[700px] bg-[#02AFEF] pt-20 flex flex-col justify-between">
-      <div className="mx-auto grid w-[80%] grid-cols-3 gap-10">
-        <div>
+    <footer className="flex  flex-col justify-between bg-[#02AFEF] pt-20 md:h-[700px]">
+      <div className="mx-auto w-[90%] grid-cols-3 gap-10 md:grid md:w-[80%]">
+        <div className="space-between flex md:flex-col ">
           <Image src={logo} alt="logo" width={100} height={100} />
-          <p className="text-[24px] mt-10">Seit 1996 in Stuttgart <br/> und Esslingen </p>
+          <p className="flex items-center text-[24px]  md:mt-10">
+            Seit 1996 in Stuttgart <br /> und Esslingen{" "}
+          </p>
         </div>
         <div>
           <h3 className="text-[80px] ">Leistung</h3>
           {services.map((service) => (
             <ul key={service.id}>
-              <li className="font-spaceGrotesk mb-2">{service.title}</li>
+              <li className="mb-2 font-spaceGrotesk">{service.title}</li>
             </ul>
           ))}
         </div>
@@ -37,7 +39,6 @@ const Footer = () => {
             >
               info@rulgmbh.de
             </a>
-
           </div>
         </div>
       </div>
