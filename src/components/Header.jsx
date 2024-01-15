@@ -21,13 +21,13 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.pageYOffset;
-      setIsScrolled(currentScroll > 0);
 
-      // Показать шапку при прокрутке вверх и скрыть при прокрутке вниз
-      if (currentScroll > lastScrollTop && currentScroll > 50) {
-        setIsVisible(false);
-      } else {
+      // Показываем навигацию при скролле вверх (когда текущая прокрутка меньше предыдущей)
+      // и скрываем при скролле вниз
+      if (currentScroll < lastScrollTop || currentScroll <= 0) {
         setIsVisible(true);
+      } else {
+        setIsVisible(false);
       }
       setLastScrollTop(currentScroll);
     };
@@ -35,6 +35,7 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollTop]);
+
   return (
     <header
       className={` top-0 z-10 w-full bg-white px-4 py-4 shadow transition-all duration-300 md:px-0 ${

@@ -15,8 +15,8 @@ export default function ServiceDetails() {
   }
   return (
     <section className="h-full">
-      <div className="m-auto my-40 flex w-[60%] flex-col items-center">
-        <p className="text-[100px] underline">{service.title}</p>
+      <div className="m-auto my-20 md:my-40 flex w-[90%] md:w-[60%] flex-col items-center">
+        <p className="text-[30px] underline md:text-[100px] mb-10">{service.title}</p>
 
         <div className="relative h-[450px] w-full">
           <Image

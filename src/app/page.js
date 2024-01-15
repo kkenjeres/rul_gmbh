@@ -31,16 +31,16 @@ export default function Home() {
     });
     ScrollTrigger.create({
       trigger: ".contactSection",
-      start: "top center",
+      start: "top top",
       endTrigger: ".locationSection",
-      end: "top top",
+      end: "top bottom",
       onEnter: () => gsap.to(".homeContainer", { backgroundColor: "#F5F5F7" }),
       onLeaveBack: () =>
         gsap.to(".homeContainer", { backgroundColor: "#01AEEF" }),
     });
     ScrollTrigger.create({
       trigger: ".heroSection",
-      start: "top center",
+      start: "top top",
       endTrigger: ".aboutSection",
       end: "top top",
       onEnter: () => gsap.to(".homeContainer", { backgroundColor: "#F5F5F7" }),

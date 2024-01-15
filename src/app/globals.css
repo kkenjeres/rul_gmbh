@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 * {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -15,6 +15,6 @@ input {
 
 @layer utilities {
   .hero-bg {
-    background-image: url('/images/hero.png');
+    background-image: url("/images/hero.png");
   }
 }

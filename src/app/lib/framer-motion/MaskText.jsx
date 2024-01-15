@@ -25,7 +25,7 @@ const MaskText = ({ phrases }) => {
   const isInView = useInView(body, { once: true, margin: "-10%" });
 
   return (
-    <div ref={body} className="m-auto md:w-[80%] w-[90%]">
+    <div ref={body} className="m-auto w-[90%] md:w-[80%]" id="#aboutSection">
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -39,8 +39,8 @@ const MaskText = ({ phrases }) => {
               variants={itemVariants}
               className={`overflow-hidden ${
                 isSpecial
-                  ? "mb-10 font-spaceGrotesk text-[30px] font-bold text-[#222222] md:text-[70px]"
-                  : "font-spaceGrotesk text-[#9b9b9b] text-[18px] md:text-[50px]"
+                  ? "mb-10  text-[30px] font-bold text-[#222222] md:text-[70px]"
+                  : " text-[18px] text-[#9b9b9b] md:text-[50px]"
               }`}
             >
               {phrase}
