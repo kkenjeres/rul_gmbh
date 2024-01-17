@@ -64,7 +64,7 @@ const Header = () => {
             </Link>
             <Link href="#servicesSection">
               <li onClick={(e) => handleLinkClick(e, "servicesSection")}>
-                Services
+                Leistungen
               </li>
             </Link>
             <Link href="#contactSection">
