@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import logo from "../../public/images/logo.svg";
 import Link from "next/link";
+import styled from "styled-components";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [lastScrollTop, setLastScrollTop] = useState(0);
@@ -38,7 +39,7 @@ const Header = () => {
 
   return (
     <header
-      className={` top-0 z-10 w-full bg-white px-4 py-4 shadow transition-all duration-300 md:px-0 ${
+      className={`fixed top-0 z-10 w-full bg-white px-4 py-4 shadow transition-all duration-300 md:px-0 ${
         isScrolled ? "h-32" : "h-32"
       } ${!isVisible && "translate-y-[-100%]"}`}
     >
@@ -63,9 +64,9 @@ const Header = () => {
               </li>
             </Link>
             <Link href="#servicesSection">
-              <li onClick={(e) => handleLinkClick(e, "servicesSection")}>
-                Services
-              </li>
+              <StyledLi onClick={(e) => handleLinkClick(e, "servicesSection")}>
+                Leistungen
+              </StyledLi>
             </Link>
             <Link href="#contactSection">
               <li onClick={(e) => handleLinkClick(e, "contactSection")}>
@@ -80,3 +81,14 @@ const Header = () => {
 };
 
 export default Header;
+
+const StyledLi = styled.li`
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  :hover {
+    background-color: red;
+    color: white;
+  }
+`;

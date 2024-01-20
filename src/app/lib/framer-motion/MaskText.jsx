@@ -39,7 +39,7 @@ const MaskText = ({ phrases }) => {
               variants={itemVariants}
               className={`overflow-hidden ${
                 isSpecial
-                  ? "mb-10  text-[30px] font-bold text-[#222222] md:text-[70px]"
+                  ? "mb-10  text-[30px] font-bold text-[#04ADEF] md:text-[70px]"
                   : " text-[18px] text-[#9b9b9b] md:text-[50px]"
               }`}
             >

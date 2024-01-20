@@ -32,7 +32,7 @@ export const Form = () => {
     <div className="m-auto flex justify-center py-10  md:py-0 ">
       <div className="flex w-[80%] flex-col justify-between ">
         <form className="flex flex-col gap-2  text-[20px]">
-          <label htmlFor="name">Name or Company</label>
+          <label htmlFor="name">Name</label>
           <input
             type="text"
             name="name"
@@ -54,17 +54,17 @@ export const Form = () => {
             className="border border-black p-2 text-[16px]"
           />
 
-          <label htmlFor="companyName">Company (but need services)</label>
+          <label htmlFor="companyName">Telefon</label>
           <input
             type="text"
-            name="companyName"
-            id="companyName"
-            value={formData.companyName}
+            name="telefon"
+            id="telefon"
+            value={formData.telefon}
             onChange={handleChange}
             className="border border-black p-2 text-[16px]"
           />
 
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message">Nachricht</label>
           <textarea
             name="message"
             id="message"
@@ -81,7 +81,7 @@ export const Form = () => {
             type="submit"
             className="mt-10 flex items-center  justify-center  rounded-xl border border-black bg-white px-6 py-4 text-black transition duration-300 hover:bg-[#f3f3f3]"
           >
-            Submit
+            Sended
             <IoMdMail className="ml-2 text-[20px]" />
           </button>
         </div>
