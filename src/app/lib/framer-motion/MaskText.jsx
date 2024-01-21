@@ -22,7 +22,7 @@ const MaskText = ({ phrases }) => {
   };
 
   const body = useRef(null);
-  const isInView = useInView(body, { once: true, margin: "-20%" });
+  const isInView = useInView(body, { once: true, margin: "-10%" });
 
   return (
     <div ref={body} className="m-auto w-full px-8 " id="#aboutSection">

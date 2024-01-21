@@ -9,10 +9,10 @@ const Contact = () => {
             Haben Sie Fragen oder möchten <br />
             Sie unseren Service in Anspruch nehmen?
           </h2>
-          <p className="text-[20px] text-white">
+          <p className="text-center text-[16px] text-white md:text-[20px]">
             Fühlen Sie sich frei, dieses Formular auszufüllen.
           </p>
-          <p className="text-white">
+          <p className="text-center text-[16px] text-white md:text-[20px]">
             Wir werden Sie innerhalb der nächsten 24 Stunden kontaktieren.
           </p>
         </div>

@@ -49,19 +49,25 @@ const Footer = () => {
   `;
 
   return (
-    <footer className="relative  flex flex-col justify-between bg-[#02AFEF] py-10 md:h-[700px]">
+    <footer className="relative  flex h-full flex-col justify-between bg-[#02AFEF] py-10 md:h-[700px]">
       <div className="mx-auto w-[90%] grid-cols-3 gap-10 md:grid md:w-[80%]">
         <div className="">
-          <Image src={logo} alt="logo" width={100} height={100} />
-          <p className="flex items-center text-left text-[24px] md:mt-10">
+          <Image
+            src={logo}
+            alt="logo"
+            width={100}
+            height={100}
+            className="h-[50px] w-[40px] md:h-[100px] md:w-[100px]"
+          />
+          <p className="mt-4 flex items-center text-left text-[24px] md:mt-10">
             Seit 1996 in Stuttgart <br /> und Esslingen{" "}
           </p>
-          <small className="absolute bottom-10 text-[16px]">
+          <small className="absolute bottom-2  text-[10px] md:bottom-10 md:text-[16px]">
             Copyright@2024 RUL Lenart GmbH
           </small>
         </div>
         <div>
-          <h3 className="mb-4 text-[30px] underline md:text-[60px]">
+          <h3 className="mb-4 mt-10 text-[24px] underline md:mt-0 md:text-[50px]">
             Leistung
           </h3>
           {services.map((service) => (
@@ -75,7 +81,9 @@ const Footer = () => {
           ))}
         </div>
         <div className="">
-          <h2 className="mb-4 text-[30px] underline md:text-[60px]">Kontakt</h2>
+          <h3 className="mb-4 mt-10 text-[24px] underline md:mt-0 md:text-[50px]">
+            Kontakt
+          </h3>
           <div className="flex flex-col gap-2">
             <p className="font-bold">Reinigungsunternehmen Lenart GmbH</p>
             <p>
@@ -113,7 +121,7 @@ const Footer = () => {
             </div>
             <Link
               href="/datenschutz"
-              className=" absolute bottom-10 flex items-center text-[16px]"
+              className=" absolute bottom-8 flex items-center text-[10px] md:bottom-10 md:text-[16px]"
             >
               | Datenschutz
             </Link>

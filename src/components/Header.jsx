@@ -94,12 +94,12 @@ const Header = () => {
           />
         </Link>
         <nav>
-          <ul className="flex gap-4 text-[16px] md:text-[20px]">
+          <ul className="flex gap-4 text-[12px] md:text-[20px]">
             <StyledLink href="/">
               <li onClick={scrollToTop}>Home</li>
             </StyledLink>
-            <StyledLink href="#aboutSection">
-              <li onClick={(e) => handleLinkClick(e, "aboutSection")}>
+            <StyledLink href="#uberUsSection">
+              <li onClick={(e) => handleLinkClick(e, "uberUsSection")}>
                 Über uns
               </li>
             </StyledLink>

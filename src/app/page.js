@@ -54,13 +54,13 @@ export default function Home() {
   return (
     <div className="homeContainer bg-[#F5F5F7]">
       <Hero />
-      <div className="aboutSection flex gap-20 ">
+      <div className="gap-20 py-20 md:flex" id="uberUsSection">
         <Image
           src={girl}
           alt="girl"
           width={200}
           height={200}
-          className="h-full w-full"
+          className="mb-10 h-full w-full md:mb-0"
         />
         <MaskText phrases={[specialPhrase, ...phrases]} />
       </div>
