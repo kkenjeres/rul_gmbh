@@ -53,7 +53,7 @@ const Location = () => {
           </div>
         </div>
         <div className="w-full rounded-br-[60px]  p-4">
-          {/* <MapWithNoSSR /> */}
+          <MapWithNoSSR />
         </div>
       </div>
     </section>
