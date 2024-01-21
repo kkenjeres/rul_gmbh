@@ -25,11 +25,12 @@ const MaskText = ({ phrases }) => {
   const isInView = useInView(body, { once: true, margin: "-10%" });
 
   return (
-    <div ref={body} className="m-auto w-[90%] md:w-[80%]" id="#aboutSection">
+    <div ref={body} className="m-auto w-full px-8 " id="#aboutSection">
       <motion.div
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
+        className=""
       >
         {phrases.map((phrase, index) => {
           const isSpecial = index === 0; // Special style for the first phrase
@@ -39,8 +40,8 @@ const MaskText = ({ phrases }) => {
               variants={itemVariants}
               className={`overflow-hidden ${
                 isSpecial
-                  ? "mb-10  text-[30px] font-bold text-[#04ADEF] md:text-[70px]"
-                  : " text-[18px] text-[#9b9b9b] md:text-[50px]"
+                  ? "mb-10  text-[30px] font-bold text-[#04ADEF] md:text-[40px] "
+                  : " text-[18px] text-[#4f4e4e] md:text-[26px] "
               }`}
             >
               {phrase}

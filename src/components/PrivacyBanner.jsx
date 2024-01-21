@@ -17,7 +17,7 @@ const PrivacyBanner = () => {
   if (!isVisible) return null; // если баннер не должен быть видимым, ничего не рендерим
 
   return (
-    <section className="font-space fixed bottom-10 left-0 right-0 z-[99999999] m-auto w-[80%] md:w-[40%] border-2 border-black bg-white p-8">
+    <section className="font-space fixed bottom-10 left-0 right-0 z-[99999999] m-auto w-[80%] border border-[black] bg-white p-8 md:w-[40%]">
       <p className="text-[14px]">
         We use cookies to enhance your browsing experience, serve personalized
         ads or content, and analyze our traffic. By clicking{" "}
@@ -33,7 +33,7 @@ const PrivacyBanner = () => {
       <div className="mt-4 flex gap-4">
         <button
           onClick={handleAcceptAll}
-          className="ransform rounded-xl bg-black px-4 py-2 text-[14px] text-white transition-transform duration-200 hover:-translate-y-[2px]"
+          className="ransform rounded-xl bg-[#04ADEF] px-4 py-2 text-[14px] text-white transition-transform duration-200 hover:-translate-y-[2px]"
         >
           Allow all cookies
         </button>

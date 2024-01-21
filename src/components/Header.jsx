@@ -37,42 +37,82 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollTop]);
 
+  const StyledLink = styled(Link)`
+    display: inline-block;
+    position: relative;
+    color: black;
+    text-decoration: none;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: black;
+      transition: width 0.3s;
+    }
+
+    &::before {
+      left: 50%;
+    }
+
+    &::after {
+      right: 50%;
+    }
+
+    &:hover::before {
+      width: 50%;
+      left: 0;
+    }
+
+    &:hover::after {
+      width: 50%;
+      right: 0;
+    }
+  `;
+
+  const StyledListItem = styled.li`
+    margin-bottom: 2px;
+    font-family: "spaceGrotesk", sans-serif;
+  `;
   return (
     <header
-      className={`fixed top-0 z-10 w-full bg-white px-4 py-4 shadow transition-all duration-300 md:px-0 ${
-        isScrolled ? "h-32" : "h-32"
-      } ${!isVisible && "translate-y-[-100%]"}`}
+      className={`sticky top-0 z-10 w-full bg-white px-4  shadow transition-all duration-300 md:px-0 ${
+        isScrolled ? "h-20" : "h-20"
+      } ${!isVisible && "translate-y-[0%]"}`}
     >
       <div className="m-auto flex h-full items-center justify-between md:w-[90%]">
         <Link href="/">
           <Image
             src={logo}
             alt="Logo"
-            width={isScrolled ? 70 : 70}
-            height={isScrolled ? 70 : 70}
-            className="transition-all duration-300"
+            width={isScrolled ? 80 : 80}
+            height={isScrolled ? 80 : 80}
+            className="absolute top-0 transition-all duration-300"
           />
         </Link>
         <nav>
-          <ul className="flex gap-4 text-[16px] md:text-[20px]">
-            <Link href="/">
+          <ul className="flex gap-4 text-[12px] md:text-[20px]">
+            <StyledLink href="/">
               <li onClick={scrollToTop}>Home</li>
-            </Link>
-            <Link href="#aboutSection">
-              <li onClick={(e) => handleLinkClick(e, "aboutSection")}>
+            </StyledLink>
+            <StyledLink href="#uberUsSection">
+              <li onClick={(e) => handleLinkClick(e, "uberUsSection")}>
                 Über uns
               </li>
-            </Link>
-            <Link href="#servicesSection">
+            </StyledLink>
+            <StyledLink href="#servicesSection">
               <StyledLi onClick={(e) => handleLinkClick(e, "servicesSection")}>
                 Leistungen
               </StyledLi>
-            </Link>
-            <Link href="#contactSection">
+            </StyledLink>
+            <StyledLink href="#contactSection">
               <li onClick={(e) => handleLinkClick(e, "contactSection")}>
                 Kontakt
               </li>
-            </Link>
+            </StyledLink>
           </ul>
         </nav>
       </div>

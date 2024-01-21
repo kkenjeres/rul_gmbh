@@ -29,7 +29,7 @@ export const Form = () => {
     });
   };
   return (
-    <div className="m-auto flex justify-center py-10  md:py-0 ">
+    <div className=" flex justify-center rounded-xl  bg-[#F2F1ED] py-4">
       <div className="flex w-[80%] flex-col justify-between ">
         <form className="flex flex-col gap-2  text-[20px]">
           <label htmlFor="name">Name</label>

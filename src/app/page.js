@@ -10,6 +10,9 @@ import { services } from "../data/ServicesData.js";
 import Hero from "@/components/Hero.jsx";
 import MaskText from "./lib/framer-motion/MaskText.jsx";
 import "./globals.css";
+import Image from "next/image.js";
+import girl from "../../public/images/girl.svg";
+import WhyUs from "@/components/WhyUs.js";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -39,7 +42,7 @@ export default function Home() {
         gsap.to(".homeContainer", { backgroundColor: "#01AEEF" }),
     });
     ScrollTrigger.create({
-      trigger: ".heroSection",
+      trigger: ".aboutSection",
       start: "top top",
       endTrigger: ".aboutSection",
       end: "top top",
@@ -51,10 +54,18 @@ export default function Home() {
   return (
     <div className="homeContainer bg-[#F5F5F7]">
       <Hero />
-      <div className="heroSection py-20">
+      <div className="gap-20 py-20 md:flex" id="uberUsSection">
+        <Image
+          src={girl}
+          alt="girl"
+          width={200}
+          height={200}
+          className="mb-10 h-full w-full md:mb-0"
+        />
         <MaskText phrases={[specialPhrase, ...phrases]} />
       </div>
       <ServicesList services={services} />
+      <WhyUs />
       <div className="servicesSection">
         <Location />
       </div>

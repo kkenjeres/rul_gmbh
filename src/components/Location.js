@@ -12,43 +12,43 @@ const Location = () => {
   const handlePopupClose = () => setShowPopup(false);
 
   return (
-    <section className=" py-20   text-white md:py-40">
-      <h2 className=" text-center  text-[50px] underline md:text-[100px]">
+    <section className="py-40   text-white md:py-40">
+      <h2 className=" text-center text-[50px]  underline md:pt-60 md:text-[100px]">
         Immer für Sie da!
       </h2>
       <PopupGoogleMaps
         showPopup={showPopup}
         handlePopupClose={handlePopupClose}
       />
-      <p className="m-auto pt-8 text-center   text-white md:my-20 w-[90%] md:text-[30px]">
+      <p className="m-auto w-[90%] pt-8   text-center text-white md:my-20 md:text-[30px]">
         Um Ihnen die perfekte Lösung bieten zu können, benötigen wir genaue s
         Informationen zu Ihren Anforderungen. Teilen Sie uns mit, wonach Sie
         suchen und Sie erhalten die bestmögliche Unterstützung. Wir freuen uns
         darauf, bald von Ihnen zu hören!
       </p>
       <div className="m-auto w-[90%] gap-4 py-40 md:flex md:w-[80%]">
-        <div className="m-auto flex w-[90%] flex-col gap-2  text-[20px] md:w-[40%] md:text-[30px]">
+        <div className="m-auto flex w-[90%] flex-col gap-4  text-[20px] md:w-[40%] md:text-[30px]">
           <div
             onClick={handleButtonClick}
-            className="flex h-full w-full cursor-pointer  items-center justify-between border-b border-white p-4  text-white transition duration-300 hover:bg-white hover:text-[#222222] md:p-4"
+            className="flex h-full w-full cursor-pointer  items-center justify-between border-b border-white p-4   text-[16px] text-white transition duration-300 hover:bg-white hover:text-[#222222] md:p-4 md:text-[24px]"
           >
-            <MdLocationOn className="mr-4  md:mb-6 md:text-[40px]" />
             Königstraße 62, <br /> 70173 Stuttgart
+            <MdLocationOn className="  md:text-[30px]" />
           </div>
           <a
             href="tel:+491727239933"
-            className="flex h-full w-full cursor-pointer items-center justify-between  border-b border-white p-4  text-white transition duration-300 hover:bg-white hover:text-[#222222] md:p-4"
+            className="flex h-full w-full cursor-pointer items-center justify-between  border-b border-white p-4 text-[16px] text-white transition duration-300 hover:bg-white hover:text-[#222222] md:p-4 md:text-[24px]"
           >
-            <MdPhoneInTalk className="mr-4  md:mb-6 md:text-[40px]" />
             +49(0)172-7239933
+            <MdPhoneInTalk className="  md:text-[30px]" />
           </a>
-          <div className="flex h-full w-full cursor-pointer   justify-between border-b border-white p-4  text-white transition duration-300 hover:bg-white hover:text-[#222222] md:p-4">
+          <div className="flex h-full w-full cursor-pointer  justify-between border-b border-white p-4 text-[16px] text-white  transition duration-300 hover:bg-white hover:text-[#222222] md:p-4 md:text-[24px]">
             <a
               href="mailto:info@rulgmbh.de"
               className="flex h-full w-full items-center justify-between"
             >
-              <MdMail className="md:mb-6 md:text-[40px]" />
               info@rulgmbh.de
+              <MdMail className=" md:text-[30px]" />
             </a>
           </div>
         </div>

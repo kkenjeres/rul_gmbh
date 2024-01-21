@@ -18,7 +18,7 @@ const phrases = [
 const About = () => {
   return (
     <div className="aboutContainer">
-      <h1>About Us</h1>
+      <h1>About sssUs</h1>
       {phrases.map((phrase, index) => (
         <Phrase
           key={index}
