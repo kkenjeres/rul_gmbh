@@ -10,7 +10,7 @@ export const services = [
   {
     id: 2,
     img: "/images/buroreinigung.svg",
-    title: "Büroreinigung",
+    title: "Büro- & Unterhaltsfeinigun",
     slug: "buroreinigung",
     description: "lorem10sd",
   },
