@@ -79,7 +79,7 @@ const Header = () => {
   `;
   return (
     <header
-      className={`sticky top-0 z-10 w-full bg-white px-4  shadow transition-all duration-300 md:px-0 ${
+      className={`sticky top-0 z-[1000] h-[50px] w-full bg-white px-4 shadow  transition-all duration-300 md:h-20 md:px-0 ${
         isScrolled ? "h-20" : "h-20"
       } ${!isVisible && "translate-y-[0%]"}`}
     >
@@ -90,7 +90,7 @@ const Header = () => {
             alt="Logo"
             width={isScrolled ? 80 : 80}
             height={isScrolled ? 80 : 80}
-            className="absolute top-0 transition-all duration-300"
+            className="absolute top-0 h-[70px] transition-all duration-300 md:h-[110px] md:w-[80px]"
           />
         </Link>
         <nav>
